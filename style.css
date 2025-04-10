@@ -6,27 +6,22 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom left, #000000, #1e1e40, #096166); /* สีพื้นหลังเริ่มต้น */
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(65, 21, 105), rgb(3, 78, 75));
     color: white;
-    animation: backgroundChange 10s infinite; /* สร้างการเคลื่อนไหวที่เปลี่ยนสีพื้นหลัง */
-}
+    animation: moveBackground 5s linear infinite;}
 
-/* สร้าง keyframes สำหรับการเปลี่ยนสีพื้นหลัง */
-@keyframes backgroundChange {
+/* สร้าง keyframes สำหรับการเคลื่อนที่ของสี */
+@keyframes moveBackground {
     0% {
-        background: linear-gradient(to bottom left, #000000, #1e1e40, #12848a); /* เริ่มต้น */
+        background-position: 0% 0%;
     }
-    33% {
-        background: linear-gradient(to bottom left, #1e1e40, #00f2ff, #6b1968); /* เปลี่ยนไปเป็นสีใหม่ */
-    }
-    66% {
-        background: linear-gradient(to bottom left, #267175, #7c2579, #18161d); /* เปลี่ยนไปเป็นสีใหม่ */
+    50% {
+        background-position: 100% 100%;
     }
     100% {
-        background: linear-gradient(to bottom left, #000000, #1e1e40, #148f96); /* กลับไปที่สีเริ่มต้น */
+        background-position: 0% 0%;
     }
 }
-
 
 header {
     display: flex;
