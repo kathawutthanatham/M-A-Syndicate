@@ -165,10 +165,12 @@ main {
 }
 
 .product-info {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(180, 185, 212, 0.5); /* ค่า 0.5 คือตัวควบคุมความโปร่งใส */
     margin: 0 auto;
     max-width: 600px;
 }
-
 .product-info img {
     width: 100%;
     max-width: 600px;
